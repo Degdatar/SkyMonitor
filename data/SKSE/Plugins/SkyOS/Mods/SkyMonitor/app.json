@@ -1,0 +1,9 @@
+{
+  "name": "SkyMonitor",
+  "plugin": "SkyMonitor.dll",
+  "requiredCore": "SkyOS.dll",
+  "viewerModule": "Data/SKSE/Plugins/SkyOS/Mods/SkyViewer/SkyMonitor/module.json",
+  "documents": "Data/SKSE/Plugins/SkyOS/Mods/SkyMonitor/SkyDocuments",
+  "settingsStorage": "%LOCALAPPDATA%/SkyOS/SkyViewer/SkyMonitor/settings.json",
+  "dataStorage": "%USERPROFILE%/Documents/My Games/Skyrim Special Edition/SKSE/SkyMonitor/ (profile exports)"
+}

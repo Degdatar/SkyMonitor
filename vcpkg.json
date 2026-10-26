@@ -1,0 +1,9 @@
+{
+  "name": "skymonitor",
+  "version-string": "0.1.0",
+  "dependencies": [
+    "directxtk",
+    "rapidcsv",
+    "spdlog"
+  ]
+}

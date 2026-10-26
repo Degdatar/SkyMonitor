@@ -1,0 +1,14 @@
+{
+  "name": "SkyMonitor",
+  "description": "Live Skyrim process telemetry and load-order overview",
+  "icon": "◈",
+  "accent": "#55d7ef",
+  "requiredCore": "SkyOS.dll",
+  "appPlugin": "SkyMonitor.dll",
+  "showInSkyApps": true,
+  "settings": [
+    { "id": "openHotkey", "label": "Open SkyMonitor hotkey", "type": "hotkey", "default": "F10", "description": "Shortcut preference for opening SkyMonitor from the in-game interface." },
+    { "id": "refreshInterval", "label": "Refresh interval (milliseconds)", "type": "number", "default": 2000, "min": 1500, "max": 5000, "step": 500, "description": "Lower values update more often and use more resources. Two seconds is a balanced default." },
+    { "id": "showPluginList", "label": "Show loaded plugin list", "type": "boolean", "default": true }
+  ]
+}

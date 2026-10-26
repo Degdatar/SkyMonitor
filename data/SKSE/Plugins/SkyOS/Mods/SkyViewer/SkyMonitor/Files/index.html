@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>SkyMonitor · SkyViewer</title>
+<style>
+  *{box-sizing:border-box}html,body{margin:0;min-height:100%;background:#0d171d;color:#e9f2f3;font:14px/1.55 'Segoe UI',sans-serif}
+  main{width:100%;max-width:none;margin:0 auto;padding:20px}.hero{position:relative;isolation:isolate;display:flex;align-items:center;min-height:160px;overflow:hidden;padding:22px;border:1px solid #55d2e055;border-radius:11px;background:#101a22}
+  .hero:before{position:absolute;z-index:-2;inset:0;content:'';background:url('{{SKYOS_BANNER}}') center/cover;opacity:.42}.hero:after{position:absolute;z-index:-1;inset:0;content:'';background:linear-gradient(90deg,#0b1219ed,#0c1419b8 70%,#0c141955)}
+  .brand{display:flex;align-items:center;gap:17px}.brand img{width:86px;height:86px;object-fit:contain;filter:drop-shadow(0 4px 14px #000b)}.eyebrow{color:#6dd8e9;font:10px monospace;letter-spacing:.17em}h1{margin:4px 0;font-size:26px}p{color:#bfccd2}.card{margin-top:15px;padding:16px;border:1px solid #4ed2e144;border-radius:10px;background:linear-gradient(145deg,#17262c,#111a20)}h2{font-size:15px}.metric{display:grid;grid-template-columns:repeat(3,1fr);gap:9px}.metric div{padding:11px;background:#0c171c;border:1px solid #ffffff18;border-radius:7px;color:#9fb2b9;font-size:10px}.metric b{display:block;color:#e6c47d;font-size:16px}
+</style>
+<main>
+  <header class="hero"><div class="brand"><img src="{{SKYOS_LOGO}}" alt="SkyMonitor logo"><div><p class="eyebrow">SKYOS PERFORMANCE ARRAY</p><h1>SkyMonitor</h1><p>Live Skyrim process telemetry and load-order overview.</p></div></div></header>
+  <section class="card"><h2>Live telemetry</h2><div class="metric"><div>CPU and RAM<b>Process level</b></div><div>GPU and VRAM<b>When Windows counters are available</b></div><div>Load order<b>Loaded game plugins</b></div></div></section>
+  <section class="card"><h2>Measurement note</h2><p>Windows measures Skyrim.exe as one process. It cannot reliably divide CPU, GPU, or memory use among SKSE DLLs or ESP/ESM plugins. SkyMonitor reports process metrics and lists plugins separately; it does not claim per-plugin resource use.</p><p>FPS and Papyrus script totals are not currently available through the supported SkyOS telemetry interface.</p></section>
+  <section class="card"><h2>Controls</h2><p>SkyMonitor refreshes while its page is open. Adjust the refresh interval and plugin-list visibility in the SkyMonitor module settings. Use the SkyViewer module tab to change its global open key.</p></section>
+</main>
+</html>
